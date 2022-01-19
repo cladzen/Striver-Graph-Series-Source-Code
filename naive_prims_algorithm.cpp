@@ -22,7 +22,7 @@ lets say this edge is e(a, b) the edge connects the two vertices a and b
 the two vertices will be connected via some path in the minimum spanning tree
 lets call this path P
 
-now consider the time while running the prims algorithm you had to choose the minimum path to connect the visited and the unvisited node
+now consider the time while running the prims algorithm you had to choose the minimum path to connect the visited and the unvisited components
 and you chose e(a, b) using the prims algorithm, which means that e(a, b) had to be the minimum weight edge that connect the two components
 (visited and unvisited)
 i claim that at that time there had to be some edge in the path P which could have also been choosen by the prims algorithm but the edge was just
