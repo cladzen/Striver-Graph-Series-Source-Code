@@ -79,6 +79,9 @@ int main() {
 
 		for (auto neigh : graph[vertex]) {
 			if (mst[neigh.first] == 0) {
+				// if you already have a lesser weight edge from the contracted visited component
+				// then it doesnt make sense to change it for a bigger edge weight
+				// since we are looking for the minimum weight spanning tree
 				if (neigh.second < key[neigh.first]) {
 					key[neigh.first] = neigh.second;
 					parent[neigh.first] = vertex;
